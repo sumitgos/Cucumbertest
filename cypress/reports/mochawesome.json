@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-09-01T05:40:43.379Z",
+    "end": "2022-09-01T05:40:43.625Z",
+    "duration": 246,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7407af20-1e24-4234-a8ce-a24018323606",
+      "title": "",
+      "fullFile": "cypress\\e2e\\assertiondemo.cy.js",
+      "file": "cypress\\e2e\\assertiondemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "AssertonDemo",
+          "fullTitle": "AssertonDemo",
+          "timedOut": null,
+          "duration": 176,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://example.cypress.io');\ncy.contains('get').click();\ncy.get('#query-btn').should('contain', 'Button') // .should('have.have.class','query-btn')\n// .should('be.visible')\n// .should('be.enabled')\n.and('have.have.class', 'query-btn').and('be.visible').and('be.enabled');\nexpect(true).to.be.equal('');",
+          "err": {
+            "message": "AssertionError: expected true to equal ''",
+            "estack": "AssertionError: expected true to equal ''\n    at Context.eval (http://localhost:64411/__cypress/tests?p=cypress\\e2e\\assertiondemo.cy.js:106:22)",
+            "diff": "- true\n"
+          },
+          "uuid": "cb78491a-c238-4cac-9bfd-68da5466a2a1",
+          "parentUUID": "7407af20-1e24-4234-a8ce-a24018323606",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "cb78491a-c238-4cac-9bfd-68da5466a2a1"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 176,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
